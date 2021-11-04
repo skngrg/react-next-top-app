@@ -20,7 +20,7 @@ declare module '*.svg' {
      * `@svgr/webpack` plugin or
      * `babel-plugin-inline-react-svg` plugin.
      */
-    const content: any;
+    const content: React.FunctionComponent<React.SVGAttributes<SVGAElement>>;
 
     export default content;
 }
