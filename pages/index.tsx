@@ -5,8 +5,12 @@ import { Tag } from '../components/Tag/Tag';
 import Rating from "../components/Rating/Rating";
 import { withLayout } from "../layout/Layout";
 import { GetStaticProps } from "next";
-import axios from 'axios'
+import axios from 'axios';
 import { MenuItem } from "../interfaces/menu.interface";
+import {
+    Input,
+    TextArea
+} from '../components';
 
 function Home({ menu }:HomeProps): JSX.Element {
   const [rating, setRating] = useState<number>(4);
@@ -24,6 +28,8 @@ function Home({ menu }:HomeProps): JSX.Element {
         {menu.map(m => {
             return <li key={m._id.secondCategory}>{m._id.secondCategory}</li>
         })}
+      <Input placeholder={'test'}/>
+      <TextArea />
     </>
   );
 }

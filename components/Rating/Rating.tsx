@@ -1,10 +1,8 @@
-import React, {useEffect, useState, KeyboardEvent} from 'react';
-import {RatingProps} from "./Rating.props";
+import React, { useEffect, useState, KeyboardEvent } from 'react';
+import { RatingProps } from "./Rating.props";
 
 import StarIcon from './star.svg';
 import styles from './Rating.module.css';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import cn from 'classnames';
 
 const Rating = ({isEditable = false, rating, setRating, className, ...props}:RatingProps): JSX.Element  => {

@@ -1,14 +1,13 @@
 import React from 'react';
-import {ButtonProps} from "./Button.props";
+import { ButtonProps } from './Button.props';
 import ArrowIcon from './Vector.svg';
+import cn from 'classnames';
 import styles from './Button.module.css';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const cn = require('classnames');
 
-const Button = ({ appearance, children, arrow = 'none', ...props }:ButtonProps) => {
+const Button = ({ appearance, children, arrow = 'none', className, ...props }: ButtonProps): JSX.Element => {
     return (
         <button
-          className={cn(styles.button, {
+          className={cn(styles.button, className, {
               [styles.primary]: appearance === 'primary',
               [styles.ghost]: appearance === 'ghost'
           })}
