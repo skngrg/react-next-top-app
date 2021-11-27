@@ -1,4 +1,4 @@
-import { TopLevelCategory } from "./topoage.interface";
+import { TopLevelCategory } from "./page.interface";
 
 export interface Id {
     secondCategory: string;

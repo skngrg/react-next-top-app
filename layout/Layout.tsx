@@ -1,4 +1,4 @@
-import React, {Component, FunctionComponent} from 'react';
+import React, { Component, FunctionComponent } from 'react';
 import { LayoutProps } from "./Layout.props";
 import Sidebar from "./Sidebar/Sidebar";
 import Header from "./Header/Header";
