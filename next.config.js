@@ -14,6 +14,11 @@ module.exports = {
                 titleProp: true,
             },
             test: /\.svg$/,
+        },
+        {
+            include: /node_modules/,
+            type: 'javascript/auto',
+            test: /\.mjs$/
         });
 
         return config;

@@ -92,6 +92,11 @@
     margin-left: 20px;
 }
 
+.reviews {
+    overflow: hidden;
+    padding: 30px;
+}
+
 .advBlock {
     font-size: 16px;
     line-height: 22px;
@@ -131,17 +136,6 @@
 .characteristicsDots {
     border-bottom: 1px dashed var(--gray-light);
     margin-bottom: 5px;
-}
-
-.closed {
-    overflow: hidden;
-    max-height: 0;
-    padding: 0;
-}
-
-.opened {
-    overflow: visible;
-    padding: 30px;
 }
 
 .rateTitle a {
